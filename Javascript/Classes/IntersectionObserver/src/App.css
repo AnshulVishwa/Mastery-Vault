@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#root {
+    background-color: #212121;
+    color: white;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .center
+  {
+    padding: 1em;
+    font-size: xx-large;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 2em;
+  }
