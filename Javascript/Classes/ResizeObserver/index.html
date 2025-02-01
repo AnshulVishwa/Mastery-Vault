@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resize Observer</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            height: 100vh;
+            width: 100vw;
+            background-color: #212121;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .dibba{
+            height: 10em;
+            width: 10em;
+            border-radius: 1em;
+            background-color: azure;
+        }
+    </style>
+</head>
+<body>
+    <div class="dibba"></div>
+</body>
+</html>
+<script>
+    const box = document.querySelector(".dibba")
+    box.addEventListener("mouseover" , (e) => {
+        box.style.height = `${e.target.clientHeight+10}px`
+        box.style.width = `${e.target.clientWidth+10}px`
+    })
+        const observer = new ResizeObserver(entries => {
+        for (let entry of entries) {
+            console.log('New size:', entry.contentRect.width, entry.contentRect.height);
+        }
+        });
+
+    observer.observe(box);
+
+</script>
