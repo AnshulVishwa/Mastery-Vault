@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checked</title>
+    <style>
+        p{
+            padding: 1em;
+            border: 1px solid black;
+            border-radius: 1em;
+            display: none;
+        }
+        #input:checked ~ p{
+            display: block;
+        }
+        #input{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <label for="input">Click me</label>
+    <input type="checkbox" id="input">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis ab temporibus natus possimus illo sed! Commodi obcaecati quaerat quibusdam esse excepturi. Non voluptas recusandae unde veritatis mollitia ullam minus nesciunt?</p>
+</body>
+</html>
