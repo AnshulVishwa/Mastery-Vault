@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Classes</title>
+    <style>
+        button{
+            color: white;
+            background: #2ba3ee;
+            padding: 1em 2em;
+            border-radius: 0.5em;
+            outline: none;
+            border: none;
+        }
+        /* <!-- I have to select all the buttons except first one -->
+        <!-- One method is to give each button a class but not first -->
+        <!-- Precise method says call ":not()" --> */
+        button:not( :first-child ){
+            background-color: rgb(217, 63, 63);
+        }
+    </style>
+</head>
+<body>
+    <button>My Button</button>    
+    <button>My Button</button>    
+    <button>My Button</button>    
+    <button>My Button</button>    
+    <button>My Button</button>    
+</body>
+</html>
