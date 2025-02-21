@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive container</title>
+    <style>
+        *{ margin: 0; padding: 0; }
+        body{ height: 100vh; width: 100vw; }
+        .flex{ display: flex; justify-content: center; align-items: center; }
+        .container{
+            /* width: 100em;
+            max-width: 50%;
+            min-width: 90%; /* Dont do this */
+            width: clamp( 90% , 100em , 50% );
+            /* min , preffered , max */
+        }
+        .container{ 
+            height: 90%;
+            padding: 2em;
+            background-color: chocolate;
+            flex-direction: column;
+            overflow-y: auto;
+            margin: 1em;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+ }
+    </style>
+</head>
+<body class="flex">
+    <div class="flex container">
+        <h2>Hello</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus modi pariatur quibusdam maxime eligendi unde asperiores, cum, ut quasi culpa molestias dolores quas! Sequi aliquid voluptatum tempora molestias! Minima, cupiditate?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure sunt vero optio. Consequatur, id. Odio voluptates autem, saepe impedit sit hic et numquam inventore dolore consequuntur? Quibusdam ea adipisci magni!
+            Soluta unde, voluptate consequuntur ad ipsa assumenda praesentium a obcaecati laboriosam exercitationem quisquam. Consequatur dignissimos labore dolorum cumque maxime ea placeat. Quasi saepe repudiandae vero expedita eligendi vitae non vel!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus modi pariatur quibusdam maxime eligendi unde asperiores, cum, ut quasi culpa molestias dolores quas! Sequi aliquid voluptatum tempora molestias! Minima, cupiditate?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure sunt vero optio. Consequatur, id. Odio voluptates autem, saepe impedit sit hic et numquam inventore dolore consequuntur? Quibusdam ea adipisci magni!
+            Soluta unde, voluptate consequuntur ad ipsa assumenda praesentium a obcaecati laboriosam exercitationem quisquam. Consequatur dignissimos labore dolorum cumque maxime ea placeat. Quasi saepe repudiandae vero expedita eligendi vitae non vel!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure sunt vero optio. Consequatur, id. Odio voluptates autem, saepe impedit sit hic et numquam inventore dolore consequuntur? Quibusdam ea adipisci magni!
+            Soluta unde, voluptate consequuntur ad ipsa assumenda praesentium a obcaecati laboriosam exercitationem quisquam. Consequatur dignissimos labore dolorum cumque maxime ea placeat. Quasi saepe repudiandae vero expedita eligendi vitae non vel!
+        </p>
+    </div>
+</body>
+</html>
