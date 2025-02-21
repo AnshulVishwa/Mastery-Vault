@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Classes</title>
+    <style>
+        button{
+            color: white;
+            background: #2ba3ee;
+            padding: 1em 2em;
+            border-radius: 0.5em;
+            outline: none;
+            border: none;
+        }
+        /* <!-- I have to select the buttons except ones who dont have child component svg -->
+        <!-- One method is to give each button a class but not first -->
+        <!-- Precise method says call ":has()" --> */
+        
+    </style>
+</head>
+<body>
+    <button>My Button</button>    
+    <button>My Button<svg><img src="./SVG/heart.svg"></svg></button>    
+    <button>My Button</button>    
+    <button>My Button<svg><img src="./SVG/heart.svg"></svg></button>    
+    <button>My Button<svg><img src="./SVG/heart.svg"></svg></button>    
+</body>
+</html>
