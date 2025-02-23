@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dark mode</title>
+    <title>Gradient text</title>
     <style>
         *{ margin: 0; padding: 0; }
         body{
@@ -13,19 +13,23 @@
             justify-content: space-evenly;
             align-items: center;
             flex-direction: column;
-        }
-        body:has(option[value="dark"]:checked){
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background-color: #212121;
-            color: white;
         }
+        h1{
+            background:linear-gradient(to right , #F7C0EC , #A7BDEA) ;
+            background-clip: text;
+            color: transparent;
+        }
+         /* h1{
+            background-image: url("./Images/flowers.jpg");
+            background-size: contain;
+            background-clip: text;
+            color: transparent;
+         } */
     </style>
 </head>
 <body>
-    <h1>Hello Welcome to our website</h1>
-    <h2>Home page</h2>
-    <select>
-        <option value="light" >Light</option>
-        <option value="dark" >Dark</option>
-    </select>
+    <h1>Anshul Vishwa</h1>
 </body>
 </html>
