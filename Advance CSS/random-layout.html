@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Layout</title>
+    <style>
+        body{
+            columns: 4 300px;
+            column-gap: 1em;
+        }
+        img{
+            display: block;
+            margin-bottom: 1em;
+        }
+    </style>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    for( let i = 0 ; i < 25 ; i++ ){
+        const height = Math.floor(Math.random()*400 + 200)
+        const img = document.createElement("img")
+        img.src = `https://picsum.photos/300/${height}`
+        document.body.appendChild(img)
+    }
+</script>
