@@ -1,8 +1,18 @@
 const slides = document.querySelector(".slides");
+const totalSlides = document.querySelectorAll(".slide").length;
+let currentIndex = 0;
 
-slides.addEventListener( "scroll" , (e) => {
-    console.log("width " , e.target.scrollWidth , "now " , e.target.scrollLeft+e.target.clientWidth)
-    if( e.target.scrollWidth == e.target.scrollLeft+e.target.clientWidth ){
-        e.target.scrollLeft = 0
-    }
-} )
+function updateSlide() {
+    let angle = (360 / totalSlides) * currentIndex;
+    slides.style.transform = `rotateY(-${angle}deg)`;
+}
+
+document.querySelector(".right").addEventListener("click", () => {
+    currentIndex = (currentIndex + 1) % totalSlides;
+    updateSlide();
+});
+
+document.querySelector(".left").addEventListener("click", () => {
+    currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+    updateSlide();
+});
